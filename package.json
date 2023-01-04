@@ -1,0 +1,32 @@
+{
+  "name": "ticketing",
+  "version": "1.0.0",
+  "description": "a ticketing ui for projects",
+  "main": "./src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrpiggy97/ticketing.git"
+  },
+  "keywords": [
+    "typesctipt",
+    "solidjs"
+  ],
+  "author": "mrpiggy97",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrpiggy97/ticketing/issues"
+  },
+  "homepage": "https://github.com/mrpiggy97/ticketing#readme",
+  "dependencies": {
+    "babel-preset-solid": "^1.6.6",
+    "solid-js": "^1.6.6"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.20.7",
+    "@babel/core": "^7.20.7",
+    "@babel/preset-env": "^7.20.2"
+  }
+}

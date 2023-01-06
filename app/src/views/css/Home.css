@@ -1,0 +1,23 @@
+div#Home{
+    display: grid;
+    align-items: flex-start;
+    justify-items: center;
+}
+
+h2#app-title{
+    font-size: xx-large;
+    text-shadow: 0 0 0.4rem;
+    box-shadow: 0 0 0.4rem #ff2a6d;
+    border: solid 1px #ff2a6d;
+    border-radius: 3px;
+    padding: 4px;
+}
+
+h1#add-app{
+    border: solid 1px #ff2a6d;
+    border-radius: 3px;
+    background-color: #092047;
+    padding: 2px;
+    box-shadow: 0 0 0.2rem #ff2a6d;
+    text-shadow: 0 0 0.2rem;
+}

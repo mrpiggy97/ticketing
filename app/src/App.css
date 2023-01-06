@@ -1,0 +1,15 @@
+@font-face {
+  font-family: Cyber;
+  src: url("https://assets.codepen.io/605876/Blender-Pro-Bold.otf");
+  font-display: swap;
+}
+
+
+div#app{
+  display: grid;
+  min-height: 100vh;
+  border: solid gold 2px;
+  background-color: #01012b;
+  color: #05d9e8;
+  font-family: Cyber;
+}

@@ -8,19 +8,40 @@
 div#app{
   display: grid;
   min-height: 100vh;
+  grid-template-columns: 100%;
+  grid-template-rows: 20vh 80vh;
+  grid-template-areas: "header"
+                       "views";
   border: solid gold 2px;
   background-color: #01012b;
   color: #05d9e8;
   font-family: Cyber;
-  align-items: flex-start;
+}
+
+div#header{
+  display: grid;
+  grid-area: header;
   justify-items: center;
+  align-items: center;
+  border: solid 2px green;
+  background-color: #29132e;
+}
+
+div#views{
+  display: grid;
+  grid-area: views;
+  border: solid 2px red;
 }
 
 h2#app-title{
   font-size: xx-large;
-  text-shadow: 0 0 0.4rem;
-  box-shadow: 0 0 0.4rem #ff2a6d;
-  border: solid 1px #ff2a6d;
+  text-shadow: 0 0 0.4rem #1afe49;
+  box-shadow: 0 0 0.4rem #1afe49;
+  border: solid 1px #1afe49;
   border-radius: 3px;
   padding: 4px;
+}
+
+h2#app-title:hover{
+  cursor: pointer;
 }

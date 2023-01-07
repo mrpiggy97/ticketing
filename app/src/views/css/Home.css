@@ -2,13 +2,15 @@ div#Home{
     display: grid;
     align-items: flex-start;
     justify-items: center;
+    min-height: 75vh;
+    border: solid 2px white;
 }
 
 h1#add-app{
     border: solid 1px #ff2a6d;
     border-radius: 3px;
     background-color: #092047;
-    padding: 2px;
+    padding: 4px;
     box-shadow: 0 0 0.2rem #ff2a6d;
     text-shadow: 0 0 0.2rem;
 }

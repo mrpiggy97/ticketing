@@ -12,4 +12,15 @@ div#app{
   background-color: #01012b;
   color: #05d9e8;
   font-family: Cyber;
+  align-items: flex-start;
+  justify-items: center;
+}
+
+h2#app-title{
+  font-size: xx-large;
+  text-shadow: 0 0 0.4rem;
+  box-shadow: 0 0 0.4rem #ff2a6d;
+  border: solid 1px #ff2a6d;
+  border-radius: 3px;
+  padding: 4px;
 }

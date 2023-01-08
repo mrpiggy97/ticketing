@@ -1,6 +1,6 @@
 div#new-app{
     display: grid;
-    align-content:flex-start;
+    align-content:space-around;
     justify-content: center;
     border: solid 2px white;
     min-height: 75vh;
@@ -8,21 +8,43 @@ div#new-app{
 
 form#app-form{
     display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(4, 1fr);
-    align-items: center;
+    align-items:baseline;
     justify-items: center;
-    border: solid 2px red;
     min-height: 60vh;
 }
 
-label#app-name-label{
+label.app-name-label{
     font-size: 50px;
     text-shadow: 0 0 0.4rem #1afe49;
 }
 
+input[type="text"].app-name-input{
+    display: grid;
+    align-self: baseline;
+    box-shadow: 0 0 0.1rem #1afe49;
+    border: solid 2px #1afe49;
+    border-radius: 3px;
+    min-height: 5vh;
+    font-family: inherit;
+    color: inherit;
+    background-color: inherit;
+    font-size: x-large;
+}
+
+input[type="text"].app-name-input:focus{
+    outline: #1afe49;
+    box-shadow: 0 0 0.4rem;
+}
+
+textarea#app-description-input{
+    min-height: 30vh;
+}
+
 @media screen and (min-width: 1000px){
-    label#app-name-label{
+    label.app-name-label{
         font-size: 35px;
+    }
+    input[type="text"].app-name-input{
+        font-size: large;
     }
 }

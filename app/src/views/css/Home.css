@@ -7,12 +7,12 @@ div#Home{
 }
 
 h1#add-app{
-    border: solid 1px #ff2a6d;
+    border: solid 1px #1afe49;
     border-radius: 3px;
     background-color: #092047;
     padding: 4px;
-    box-shadow: 0 0 0.2rem #ff2a6d;
-    text-shadow: 0 0 0.2rem;
+    box-shadow: 0 0 0.2rem #1afe49;
+    text-shadow: 0 0 0.4rem #1afe49;
 }
 
 h1#add-app:hover{

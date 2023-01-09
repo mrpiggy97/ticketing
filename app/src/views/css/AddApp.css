@@ -36,8 +36,17 @@ input[type="text"].app-name-input:focus{
     box-shadow: 0 0 0.4rem;
 }
 
-textarea#app-description-input{
-    min-height: 30vh;
+button.app-name-input-button{
+    border: solid 2px #1afe49;
+    border-radius: 3px;
+    box-shadow: 0 0 0.1rem #1afe49;
+    text-shadow: 0 0 0.1rem #1afe49;
+    background-color: inherit;
+    color: inherit;
+    font-family: inherit;
+    min-height: 5vh;
+    min-width: 20vw;
+    font-size: x-large;
 }
 
 @media screen and (min-width: 1000px){
@@ -46,5 +55,8 @@ textarea#app-description-input{
     }
     input[type="text"].app-name-input{
         font-size: large;
+    }
+    button.app-name-input-button{
+        min-width: 10vw;
     }
 }

@@ -1,0 +1,12 @@
+div.app-info{
+    display: grid;
+    align-items: baseline;
+    justify-items: center;
+    border: solid 2px #1afe49;
+    border-radius: 3px;
+    border-color: #1afe49;
+    box-shadow: 0 0 0.4rem #1afe49;
+    font-family: inherit;
+    font-size: large;
+    background-image:url("../cyberpunk.jpg");
+}

@@ -7,7 +7,7 @@ div#app{
   grid-template-areas: "header"
                        "views";
   border: solid gold 2px;
-  background-color: #01012b;
+  background-color: #0f122c;
   color: #06f7eb;
 }
 
@@ -17,7 +17,7 @@ div#header{
   justify-items: center;
   align-items: center;
   border: solid 2px #1afe49;
-  background-color: #1e0636;
+  background-color: #232958;
 }
 
 div#views{

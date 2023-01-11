@@ -49,6 +49,11 @@ button.app-name-input-button{
     font-size: x-large;
 }
 
+button.app-name-input-button:hover{
+    cursor: pointer;
+    box-shadow: 0 0 0.4rem;
+}
+
 @media screen and (min-width: 1000px){
     label.app-name-label{
         font-size: 35px;

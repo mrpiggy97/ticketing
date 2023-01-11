@@ -7,10 +7,14 @@ div.app-info{
     border: solid 2px #1afe49;
     border-radius: 3px;
     border-color: #1afe49;
-    box-shadow: 0 0 0.4rem #1afe49;
+    box-shadow: 0 0 0.2rem #1afe49;
     font-family: inherit;
     font-size: large;
     overflow-x: auto;
     background-image:url("../universe3.avif");
     background-position: center;
+}
+
+div.app-info:hover{
+    box-shadow: 0 0 0.4rem ;
 }

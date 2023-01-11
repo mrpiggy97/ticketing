@@ -1,5 +1,7 @@
 div.app-info{
     display: grid;
+    min-height: 10vh;
+    max-width: 20vw;
     align-items: baseline;
     justify-items: center;
     border: solid 2px #1afe49;
@@ -8,5 +10,7 @@ div.app-info{
     box-shadow: 0 0 0.4rem #1afe49;
     font-family: inherit;
     font-size: large;
-    background-image:url("../cyberpunk.jpg");
+    overflow-x: auto;
+    background-image:url("../universe3.avif");
+    background-position: center;
 }

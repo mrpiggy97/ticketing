@@ -13,12 +13,16 @@ export default function Home() : JSX.Element{
     }
     return(
         <div id="Home">
-            <h1 id="add-app" onclick={goToAddApp}>app+</h1>
-            <For each={apps}>
-                {(app) =>
-                    <AppInfo id={app.Id} name={app.Name} description={app.Description} />
-                }
-            </For>
+            <div id="home-header">
+                <h1 id="add-app" onclick={goToAddApp}>app+</h1>
+            </div>
+            <div id="apps">
+                <For each={apps}>
+                    {(app) =>
+                        <AppInfo id={app.Id} name={app.Name} description={app.Description} />
+                    }
+                </For>
+            </div>
         </div>
     )
 }

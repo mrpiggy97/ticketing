@@ -1,14 +1,19 @@
 div#Home{
     display: grid;
-    align-items: flex-start;
-    justify-items: center;
     min-height: 75vh;
+    min-width: 75vw;
+    grid-template-columns: 70vw;
+    grid-template-rows: 15vh 50vh;
+    grid-template-areas: "home-header"
+                         "apps";
+    align-content: center;
+    justify-content: center;
     border: solid 2px white;
 }
 
-div#add-app{
+div#home-header{
     display: grid;
-    grid-area: add-app;
+    grid-area: home-header;
     align-items: center;
     justify-items: center;
     border: solid 2px white
@@ -17,6 +22,7 @@ div#add-app{
 div#apps{
     display: grid;
     grid-area: apps;
+    grid-template-columns: repeat(2,35vw);
     border: solid 2px green;
     justify-items: center;
     align-items: center;

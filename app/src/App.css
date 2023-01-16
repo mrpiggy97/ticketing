@@ -2,10 +2,12 @@ div#app{
   display: grid;
   min-height: 100vh;
   max-height: 100vh;
-  grid-template-columns: 100%;
-  grid-template-rows: 20vh 80vh;
-  grid-template-areas: "header"
-                       "views";
+  min-width: 100vw;
+  max-width: 100vw;
+  grid-template-columns: 100vw;
+  grid-template-rows: 15vh 85vh;
+  grid-template-areas: "header header"
+                       "views views";
   border: solid gold 2px;
   background-color: #0d1029;
   color: #06f7eb;

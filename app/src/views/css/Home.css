@@ -1,7 +1,7 @@
 div#Home{
     display: grid;
     min-height: 75vh;
-    min-width: 75vw;
+    min-width: 100%;
     grid-template-columns: 70vw;
     grid-template-rows: 15vh 50vh;
     grid-template-areas: "home-header"

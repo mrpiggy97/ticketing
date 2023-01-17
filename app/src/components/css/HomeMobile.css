@@ -1,4 +1,4 @@
-div#Home{
+div#Home-mobile{
     display: grid;
     min-height: 75vh;
     min-width: 100%;
@@ -39,8 +39,10 @@ h1#add-app{
     font-size: xx-large;
     min-height: 30px;
     min-width: 70px;
-}
-
-h1#add-app:hover{
+    justify-self: center;
+  }
+  
+  h1#add-app:hover{
     cursor: pointer;
-}
+    box-shadow: 0 0 0.4rem;
+  }

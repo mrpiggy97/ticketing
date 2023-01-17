@@ -2,8 +2,7 @@ div#app{
   display: grid;
   min-height: 100vh;
   max-height: 100vh;
-  min-width: 90vw;
-  max-width: 100%;
+  min-width: 98vw;
   grid-template-columns: 100%;
   grid-template-rows: 15vh 85vh;
   grid-template-areas: "header header"

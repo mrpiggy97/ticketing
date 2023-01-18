@@ -11,11 +11,14 @@ form#app-form{
     align-items:baseline;
     justify-items: center;
     min-height: 60vh;
+    border: solid 2px #1afe49;
+    border-radius: 3px;
+    box-shadow: 0 0 0.4rem;
 }
 
 label.app-name-label{
     font-size: 50px;
-    text-shadow: 0 0 0.4rem #1afe49;
+    text-shadow:  0 0 0.1rem;
 }
 
 input[type="text"].app-name-input{

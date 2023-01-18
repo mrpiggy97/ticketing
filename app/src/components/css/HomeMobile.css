@@ -2,14 +2,12 @@ div#Home-mobile{
     display: grid;
     min-height: 75vh;
     min-width: 100%;
-    max-width: 100%;
-    grid-template-columns: 70vw;
+    grid-template-columns: 100%;
     grid-template-rows: 15vh 50vh;
     grid-template-areas: "home-header"
                          "apps";
     align-content: center;
     justify-content: center;
-    border: solid 2px white;
 }
 
 div#home-header{
@@ -23,7 +21,7 @@ div#home-header{
 div#apps{
     display: grid;
     grid-area: apps;
-    grid-template-columns: repeat(2,35vw);
+    grid-template-columns: repeat(2,35%);
     border: solid 2px green;
     justify-items: center;
     align-items: center;

@@ -1,7 +1,7 @@
 div.app-info{
     display: grid;
     min-height: 10vh;
-    max-width: 20vw;
+    min-width: 20vh;
     align-items: baseline;
     justify-items: center;
     border: solid 2px #1afe49;

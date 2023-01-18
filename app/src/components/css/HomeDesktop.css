@@ -16,7 +16,7 @@ div#apps-menu{
     box-shadow: 0 0 0.4rem;
     justify-items: left;
     align-items:baseline;
-    background-color: #131946;
+    background-image: linear-gradient(#0d1029, rgb(119, 8, 86));
     overflow-y: scroll;
 }
 

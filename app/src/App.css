@@ -1,14 +1,33 @@
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #1afe49;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
 div#app{
   display: grid;
   min-height: 100vh;
   max-height: 100vh;
-  min-width: 98vw;
+  min-width: 100%;
   grid-template-columns: 100%;
-  grid-template-rows: 15vh 85vh;
-  grid-template-areas: "header header"
-                       "views views";
-  border: solid gold 2px;
-  background-color: #0d1029;
+  grid-template-rows: 15% 85%;
+  grid-template-areas: "header"
+                       "views";
+  background-image: linear-gradient(#0d1029,rgb(49, 6, 68));
   color: #06f7eb;
 }
 
@@ -17,14 +36,14 @@ div#header{
   grid-area: header;
   justify-items: center;
   align-items: center;
-  border: solid 2px #1afe49;
-  background-color: #232958;
+  border: solid 1px #1afe49;
+  background-image: linear-gradient(#0d1029, rgb(119, 8, 86));
 }
 
 div#views{
   display: grid;
   grid-area: views;
-  border: solid 2px red;
+  border: solid 1px red;
 }
 
 h2#app-title{

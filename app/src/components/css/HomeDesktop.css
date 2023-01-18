@@ -3,14 +3,14 @@ div#Home-desktop{
     grid-template-columns: 20% 80%;
     grid-template-rows: 100%;
     grid-template-areas: "apps-menu app-services";
-    border: solid 2px white;
     overflow-y: hidden;
 }
 
 div#apps-menu{
     display: grid;
     grid-area: apps-menu;
-    border: solid 2px #1afe49;
+    border: solid 3px #06f7eb;
+    border-radius: 3px;
     grid-template-rows: repeat(8,10vh);
     grid-auto-rows: 10vh;
     box-shadow: 0 0 0.4rem;
@@ -40,6 +40,7 @@ h2#add-app:hover{
 
 span.app{
     border: solid 2px #1afe49;
+    border-left: none;
     box-shadow: 0 0 0.1rem;
     border-radius: 2px;
     padding: 3px;

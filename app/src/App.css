@@ -10,7 +10,7 @@
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #1afe49;
+  background: #06f7eb;
 }
 
 /* Handle on hover */
@@ -36,25 +36,25 @@ div#header{
   grid-area: header;
   justify-items: center;
   align-items: center;
-  border: solid 1px #1afe49;
   background-image: linear-gradient(#0d1029, rgb(119, 8, 86));
 }
 
 div#views{
   display: grid;
   grid-area: views;
-  border: solid 1px red;
 }
 
 h2#app-title{
   font-size: xx-large;
-  text-shadow: 0 0 0.4rem #1afe49;
+  text-shadow: 0 0 0.1rem;
   box-shadow: 0 0 0.4rem #1afe49;
-  border: solid 1px #1afe49;
+  border: solid 2px #1afe49;
   border-radius: 3px;
   padding: 4px;
 }
 
 h2#app-title:hover{
   cursor: pointer;
+  box-shadow: 0 0 0.9rem #1afe49;
+  text-shadow:  0 0 0.8rem;
 }

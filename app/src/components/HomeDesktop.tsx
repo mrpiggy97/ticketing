@@ -1,6 +1,8 @@
-import { For, JSX } from "solid-js";
+import { For, JSX, createSignal } from "solid-js";
 import { useNavigate } from "@solidjs/router";
-import { apps } from "../store/state";
+import { apps, services } from "../store/state";
+import AppInfo from "./AppInfo";
+import ServiceComponent from "./Service";
 
 import "./css/HomeDesktop.css"
 
@@ -14,10 +16,13 @@ export default function HomeDesktop() : JSX.Element{
             <div id="apps-menu">
                 <h2 id="add-app" onclick={goToAddApp}>app+</h2>
                 <For each={apps}>
-                    {(app) => <span class="app">apps/{app.Name}</span>}
+                    {(app) => <AppInfo name={app.Name} description={app.Description} id={app.Id}/>}
                 </For>
             </div>
             <div id="app-services">
+                <For each={services}>
+                    {(service) => <ServiceComponent service={service} />}
+                </For>
             </div>
         </div>
     )

@@ -8,6 +8,7 @@ div#Home-mobile{
                          "apps";
     align-content: center;
     justify-content: center;
+    overflow-x: hidden;
 }
 
 div#home-header{
@@ -15,16 +16,16 @@ div#home-header{
     grid-area: home-header;
     align-items: center;
     justify-items: center;
-    border: solid 2px white
 }
 
 div#apps{
     display: grid;
     grid-area: apps;
-    grid-template-columns: repeat(2,35%);
-    border: solid 2px green;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4, 25%);
+    grid-auto-rows: 25%;
     justify-items: center;
-    align-items: center;
+    align-items: center
 }
 
 h1#add-app{

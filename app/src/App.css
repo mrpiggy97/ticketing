@@ -5,7 +5,7 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #1afe49;
 }
  
 /* Handle */
@@ -36,6 +36,8 @@ div#header{
   grid-area: header;
   justify-items: center;
   align-items: center;
+  border-bottom: 3px solid #06f7eb;
+  box-shadow: 0 0 0.4rem;
   background-image: linear-gradient(#0d1029, rgb(119, 8, 86));
 }
 

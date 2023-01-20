@@ -1,20 +1,31 @@
 div.app-info{
     display: grid;
     min-height: 10vh;
-    min-width: 20vh;
-    align-items: baseline;
+    min-width: 80%;
+    align-items: center;
     justify-items: center;
     border: solid 2px #1afe49;
     border-radius: 3px;
     border-color: #1afe49;
-    box-shadow: 0 0 0.2rem #1afe49;
+    box-shadow: 0 0 0.1rem #1afe49;
     font-family: inherit;
-    font-size: large;
+    font-size: xx-large;
     overflow-x: auto;
-    background-image:url("../universe3.avif");
+    background-image: url("../universe3.avif");
     background-position: center;
 }
 
 div.app-info:hover{
     box-shadow: 0 0 0.4rem ;
+}
+
+@media screen and (min-width: 1000px){
+    div.app-info{
+        min-width: 50%;
+        min-height: 10%;
+        font-size: large;
+        padding: 3px;
+        border-left: none;
+        cursor: pointer;
+    }
 }

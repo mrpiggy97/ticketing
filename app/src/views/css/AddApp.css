@@ -2,7 +2,6 @@ div#new-app{
     display: grid;
     align-content:space-around;
     justify-content: center;
-    border: solid 2px white;
     min-height: 75vh;
 }
 

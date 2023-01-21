@@ -1,7 +1,7 @@
 import { JSX } from "solid-js";
 
 import "./css/AppInfo.css"
-import { serviceMock, setServices, Service } from "../store/state";
+import { serviceMock, Service, AppServices, setAppSelected, appSelected } from "../store/state";
 
 type appInfoProps = {
     id : number,
@@ -12,7 +12,13 @@ type appInfoProps = {
 export default function AppInfo(props : appInfoProps) : JSX.Element{
     let filterServices = () => {
         let filteredServices : Service[] = serviceMock.filter((service) => service.AppId === props.id)
-        setServices(filteredServices)
+        let newState : AppServices = {
+            Name : props.name,
+            Id : props.id,
+            Description : props.description,
+            Services : filteredServices
+        }
+        setAppSelected({...appSelected, ...newState})
     }
     return(
         <div class="app-info" onclick={filterServices}>

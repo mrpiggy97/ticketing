@@ -25,7 +25,6 @@ div.app-info:hover{
         min-height: 10%;
         font-size: large;
         padding: 3px;
-        border-left: none;
         cursor: pointer;
     }
 }

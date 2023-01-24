@@ -24,30 +24,44 @@ div#apps-menu{
 div#app-services{
     display: grid;
     grid-area: app-services;
+    grid-template-columns: 100%;
+    grid-template-rows: 30% 70%;
+    grid-template-areas: "app-services-header"
+                         "app-services-body";
 }
 
-h2#add-app{
+div#app-services-header{
+    display: grid;
+    grid-area: app-services-header;
+    grid-template-columns: 50%;
+    grid-template-rows: 50% 25% 25%;
+    justify-items: center;
+    justify-content: center;
+    align-items:center;
+}
+
+div#app-services-body{
+    display: grid;
+    grid-area: app-services-body;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: repeat(5, 20vh);
+    row-gap: 10%;
+    column-gap: 10%;
+    justify-content: center;
+    align-content: space-between;
+    grid-auto-rows: 10vh;
+}
+
+h2.add-app-or-services{
     border: solid 2px #1afe49;
     box-shadow: 0 0 0.1rem;
     border-radius: 2px;
     min-width: 5vw;
     justify-self: center;
+    padding: 2px;
 }
 
-h2#add-app:hover{
-    box-shadow: 0 0 0.4rem;
-    cursor: pointer;
-}
-
-span.app{
-    border: solid 2px #1afe49;
-    border-left: none;
-    box-shadow: 0 0 0.1rem;
-    border-radius: 2px;
-    padding: 3px;
-}
-
-span.app:hover{
+h2.add-app-or-services:hover{
     box-shadow: 0 0 0.4rem;
     cursor: pointer;
 }

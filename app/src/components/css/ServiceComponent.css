@@ -12,26 +12,10 @@ div.service-component{
 }
 
 div.service-component:hover{
-    box-shadow: 0 0 0.4rem;
-    animation: service-component-hover;
-    animation-duration: 0.5s;
-    animation-timing-function: ease-in;
-    animation-fill-mode: forwards;
+    box-shadow: 0 0 0.8rem;
 }
 
 @keyframes service-component-entrance{
-    0%{
-        opacity: 0;
-        filter: brightness(3) saturate(2);
-    }
-    100%{
-        opacity: 1;
-        filter: brightness(1) saturate(1);
-    }
-}
-
-@keyframes service-component-hover{
-    100%{
-        transform: scale(1.2);
-    }
+    from {opacity: 0;}
+    to {opacity: 1;}
 }

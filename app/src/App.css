@@ -38,7 +38,7 @@ div#header{
   align-items: center;
   border-bottom: 3px solid #06f7eb;
   box-shadow: 0 0 0.4rem;
-  background-image: linear-gradient(#0d1029, rgb(119, 8, 86));
+  background-image: linear-gradient(#0d1029, #070d47,#06f7eb);
 }
 
 div#views{

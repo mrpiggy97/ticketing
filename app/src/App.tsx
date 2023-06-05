@@ -1,14 +1,18 @@
 import type { Component } from 'solid-js';
-import { Routes,Route, useNavigate } from '@solidjs/router';
+import { createSignal, Switch, Match } from 'solid-js';
 
-import Home from './views/Home';
-import AddApp from './views/AddApp';
-
+import HomeDesktop from './views/HomeDesktop';
+import HomeMobile from './views/HomeMobile';
+import { useNavigate } from '@solidjs/router';
 import "./App.css"
 
 const App: Component = () => {
+  let [width,setWidth] = createSignal(window.innerWidth)
+  window.addEventListener("resize", () => {
+      setWidth(window.innerWidth)
+  })
   let navigator = useNavigate()
-  let goHome = () => {
+  const goHome = () => {
     navigator("/")
   }
   return (
@@ -17,10 +21,14 @@ const App: Component = () => {
         <h2 id="app-title" onclick={goHome}>CyberTicket</h2>
       </div>
       <div id="views">
-        <Routes>
-          <Route path="/" component={Home} />
-          <Route path="/add-app" component={AddApp}/>
-        </Routes>
+        <Switch>
+          <Match when={width() >= 1000}>
+            <HomeDesktop/>
+          </Match>
+          <Match when={width() < 1000}>
+            <HomeMobile/>
+          </Match>
+        </Switch>
       </div>
     </div>
   );

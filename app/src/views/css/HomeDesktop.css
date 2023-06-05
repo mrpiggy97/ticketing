@@ -1,0 +1,41 @@
+div#Home-desktop{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 100%;
+    grid-template-areas: "apps-menu views";
+    overflow-y: hidden;
+}
+
+div#apps-menu{
+    display: grid;
+    grid-area: apps-menu;
+    border: solid 3px #06f7eb;
+    border-top: none;
+    border-radius: 3px;
+    grid-template-rows: repeat(8,10vh);
+    grid-auto-rows: 10vh;
+    box-shadow: 0 0 0.4rem;
+    justify-items: left;
+    align-items:baseline;
+    background-image: linear-gradient(rgb(119, 8, 86, #0d1029));
+    overflow-y: scroll;
+}
+
+div#views{
+    display: grid;
+    grid-area: views
+}
+
+h2.add-app-or-services{
+    border: solid 2px #1afe49;
+    box-shadow: 0 0 0.1rem;
+    border-radius: 2px;
+    min-width: 5vw;
+    justify-self: center;
+    padding: 2px;
+}
+
+h2.add-app-or-services:hover{
+    box-shadow: 0 0 0.4rem;
+    cursor: pointer;
+}

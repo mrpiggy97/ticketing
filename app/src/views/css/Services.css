@@ -1,0 +1,41 @@
+div#services{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 20% 70%;
+    grid-template-areas: "add-service"
+                         "app-name"
+                         "app-services";
+}
+
+div#add-service{
+    display: grid;
+    grid-area: add-service;
+    justify-items: center;
+}
+
+h2#add-service{
+    border: solid 2px #1afe49;
+    box-shadow: 0 0 0.2rem #1afe49;
+    padding: 5px;
+}
+h2#add-service:hover{
+    cursor: pointer;
+    box-shadow: 0 0 0.4rem #06f7eb;
+}
+
+div#app-name{
+    display: grid;
+    grid-area: app-name;
+    grid-template-columns: 100%;
+    justify-items: center;
+    align-items: baseline;
+}
+
+div#app-services{
+    display: grid;
+    grid-area: app-services;
+    justify-items: center;
+    row-gap: 15px;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(4,25%);
+}

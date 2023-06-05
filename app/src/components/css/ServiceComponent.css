@@ -1,7 +1,8 @@
 div.service-component{
     display: grid;
     min-height: 100%;
-    min-width: 100%;
+    min-width: 70%;
+    max-width: 70%;
     border: solid 2px #1afe49;
     border-radius: 3px;
     box-shadow: 0 0 0.2rem;
@@ -13,6 +14,22 @@ div.service-component{
 
 div.service-component:hover{
     box-shadow: 0 0 0.8rem;
+}
+
+a.github-link{
+    color: #1afe49;
+}
+
+a.github-link:active{
+    color: #1afe49;
+}
+
+a.website-link{
+    color: rgb(145, 1, 92);
+}
+
+a.website-link:active{
+    color: rgb(145, 1, 92);
 }
 
 @keyframes service-component-entrance{

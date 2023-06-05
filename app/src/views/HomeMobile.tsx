@@ -1,7 +1,7 @@
 import { JSX, For } from "solid-js";
 import { useNavigate } from "@solidjs/router";
-import AppInfo from "./AppInfo";
-import { apps } from "../store/state";
+import AppInfo from "../components/AppInfo";
+import { apps } from "../store/app";
 
 import "./css/HomeMobile.css"
 
@@ -18,7 +18,7 @@ export default function HomeMobile() : JSX.Element{
             <div id="apps">
                 <For each={apps}>
                     {(app) =>
-                        <AppInfo id={app.Id} name={app.Name} description={app.Description} />
+                        <AppInfo Id={app.Id} Name={app.Name} Description={app.Description} />
                     }
                 </For>
             </div>

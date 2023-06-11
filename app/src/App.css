@@ -60,3 +60,33 @@ h2#app-title:hover{
   box-shadow: 0 0 0.9rem #1afe49;
   text-shadow:  0 0 0.8rem;
 }
+
+input[type="text"]{
+  border: solid 2px #1afe49;
+  border-radius: 3px;
+  box-shadow: 0 0 0.2rem #1afe49;
+  color: #06f7eb;
+  background-color:#0d1029;
+  font-family: Cyber;
+  font-size: large;
+}
+
+input[type="text"]:focus{
+  outline: #1afe49;
+  box-shadow: 0 0 0.4rem #1afe49;
+}
+
+button[type="submit"]{
+  background-color: transparent;
+  border: solid 2px #1afe49;
+  border-radius: 3px;
+  cursor: pointer;
+  color: #06f7eb;
+  font-family: Cyber;
+  font-size: large;
+  align-self: flex-end;
+}
+
+button[type="submit"]:hover{
+  box-shadow: 0 0 0.4rem #1afe49;
+}

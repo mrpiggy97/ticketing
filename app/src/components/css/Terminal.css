@@ -1,0 +1,11 @@
+div.terminal{
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+input[type="text"]#terminal-input{
+    background-color: transparent;
+    min-width: 85%;
+    border: none;
+    box-shadow: none;
+}

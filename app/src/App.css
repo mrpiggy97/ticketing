@@ -18,6 +18,10 @@
   background: #555; 
 }
 
+div.lightmode{
+  background-color: white;
+}
+
 div#app{
   display: grid;
   min-height: 100vh;
@@ -27,8 +31,8 @@ div#app{
   grid-template-rows: 15% 85%;
   grid-template-areas: "header"
                        "views";
-  background-image: linear-gradient(#0d1029,#070d47);
   color: #06f7eb;
+  background-image: linear-gradient(#0d1029,#070d47);
 }
 
 div#header{

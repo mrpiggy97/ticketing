@@ -2,14 +2,14 @@ div#console{
     display: grid;
     position: fixed;
     z-index: 2;
-    grid-template-columns: 90% 10%;
-    grid-template-rows: 100%;
-    grid-template-areas: "terminal terminal-menu";
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 80%;
+    grid-template-areas: "terminal-menu"
+                         "terminal";
     min-width: 80%;
     align-self: flex-end;
     font-size: large;
-    background-image: linear-gradient(rgb(192, 14, 29) #0876b6);
-    background-color: rgba(4, 4, 43, 0.527);
+    background-color: rgba(4, 4, 43, 1);
     border: solid 2px #06f7eb;
     box-shadow: 0 0 0.4rem #06f7eb;;
 }
@@ -27,24 +27,34 @@ div#terminal{
     grid-area: terminal;
 }
 
-div#toggle-size{
-    display: grid;
-    grid-area: toggle-size;
-    border: solid 1px #1afe49;
-    box-shadow: 0 0 0.2rem #1afe49;
-    justify-items: center;
-    cursor: pointer;
-}
-
-div#toggle-size:hover{
-    box-shadow: 0 0 0.4rem #1afe49;
-}
-
 div#terminal-menu{
     display: grid;
     grid-area: terminal-menu;
-    justify-items: center;
+    grid-template-rows: 100%;
+    grid-template-columns: 80% 20%;
+    grid-template-areas: ". icons";
+}
+
+div#icons{
+    display: grid;
+    grid-area: icons;
+    grid-template-columns: repeat(5, 20%);
     align-items: center;
-    grid-template-rows: repeat(4,25%);
-    border: solid 1px #06f7eb;
+    justify-items:right;
+    font-size: small;
+    color: #1afe49;
+}
+
+i.console:hover{
+    cursor: pointer;
+    box-shadow: 0 0 0.4rem #1afe49;
+}
+
+i.lightmode{
+    color: grey;
+    cursor: pointer;
+}
+
+i.lightmode:hover{
+    color: white;
 }

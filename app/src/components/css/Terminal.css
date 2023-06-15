@@ -9,3 +9,7 @@ input[type="text"]#terminal-input{
     border: none;
     box-shadow: none;
 }
+
+label#input-label{
+    color: #1afe49;
+}

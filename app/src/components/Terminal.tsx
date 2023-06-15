@@ -43,7 +43,7 @@ export default function Terminal() : JSX.Element{
                 {(command) => <Cmd commands={command.commands} logs={command.logs}/>}
             </For>
             <form>
-                <label for="terminal-input">cyberticket/ $</label>
+                <label for="terminal-input" id="input-label">cyberticket/ $</label>
                 <input type="text" maxLength={200} class="terminal-input" id="terminal-input" onKeyDown={toggleFocus} ref={input}/>
             </form>
         </div>

@@ -15,6 +15,7 @@ const App: Component = () => {
   const goHome = () => {
     navigator("/")
   }
+
   return (
     <div id="app">
       <div id="header">

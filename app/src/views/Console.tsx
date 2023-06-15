@@ -1,5 +1,6 @@
 import { For, JSX, Show, createSignal, onCleanup, onMount } from "solid-js";
 import Terminal from "../components/Terminal";
+import { theme, setTheme } from "../store/theme";
 import "./css/Console.css"
 
 export default function Console() : JSX.Element{
@@ -10,6 +11,14 @@ export default function Console() : JSX.Element{
         }else{
             setSizeClass("console-down")
         }
+        document.getElementById("terminal-input")?.focus()
+    }
+    const toggleTheme = () => {
+        if(theme.mode === "default"){
+            setTheme({mode : "lightmode"})
+        }else{
+            setTheme({mode: "default"})
+        }
     }
     return(
         <div id="console" class={sizeClass()}>
@@ -17,10 +26,17 @@ export default function Console() : JSX.Element{
                 <Terminal/>
             </div>
             <div id="terminal-menu">
-                <i class="fa-solid fa-arrow-up-right-from-square" onclick={toggleSizeClass}></i>
-                <i class="fa-solid fa-trash"></i>
-                <i class="fa-solid fa-lightbulb"></i>
-                <span>ter1</span>
+                <div id="icons">
+                    <span>ter1</span>
+                    <Show when={sizeClass() === "console-down"}>
+                        <i class="fa-solid fa-arrow-up-right-from-square console" onclick={toggleSizeClass}></i>
+                    </Show>
+                    <Show when={sizeClass() === "console-up"}>
+                        <i class="fa-solid fa-chevron-down console" onclick={toggleSizeClass}></i>
+                    </Show>
+                    <i class="fa-solid fa-trash console"></i>
+                    <i class="fa-solid fa-lightbulb lightmode" onclick={toggleTheme}></i>
+                </div>
             </div>
         </div>
     )

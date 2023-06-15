@@ -1,14 +1,23 @@
-import { JSX, For } from "solid-js";
+import { JSX, For, Show, createSignal } from "solid-js";
 import { appSelected } from "../store/app";
 import { services } from "../store/services";
 import ServiceComponent from "../components/ServiceComponent";
+import AddService from "../components/AddService";
 import "./css/Services.css"
 
 export default function Services() : JSX.Element{
+    let [showServiceForm, setShowServiceForm] = createSignal(false)
+    let toogleServiceForm = () => {
+        if(showServiceForm()){
+            setShowServiceForm(false)
+        }else{
+            setShowServiceForm(true)
+        }
+    }
     return(
         <div id="services">
             <div id="add-service">
-                <h2 id="add-service">add service+</h2>
+                <h2 id="add-service" onclick={toogleServiceForm}>add service+</h2>
             </div>
             <div id="app-name">
                 <h2>services/{appSelected.Name}</h2>
@@ -26,6 +35,9 @@ export default function Services() : JSX.Element{
                     />}
                 </For>
             </div>
+            <Show when={showServiceForm()}>
+                <AddService/>
+            </Show>
         </div>
     )
 }

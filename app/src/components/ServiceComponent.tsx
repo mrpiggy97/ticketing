@@ -6,7 +6,7 @@ import "./css/ServiceComponent.css"
 export default function ServiceComponent(props : Service) : JSX.Element{
     return(
         <div class="service-component">
-            <span>services/{appSelected.Name}/{props.Name}</span>
+            <span class="service-title">services/{appSelected.Name}/{props.Name}</span>
             <span>{props.Description}</span>
             <Show when={props.Github}>
                 <a class="github-link" href={props.Github} target="_blank">{props.Github}</a>

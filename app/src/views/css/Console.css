@@ -2,10 +2,9 @@ div#console{
     display: grid;
     position: fixed;
     z-index: 2;
-    grid-template-columns: 75% 25%;
-    grid-template-rows: 25% 75%;
-    grid-template-areas: "terminal add-terminal"
-                          "terminal terminal-menu";
+    grid-template-columns: 90% 10%;
+    grid-template-rows: 100%;
+    grid-template-areas: "terminal terminal-menu";
     min-width: 80%;
     align-self: flex-end;
     font-size: large;
@@ -16,7 +15,7 @@ div#console{
 }
 
 div.console-up{
-    min-height: 100%;
+    min-height: 50%;
 }
 
 div.console-down{
@@ -26,28 +25,6 @@ div.console-down{
 div#terminal{
     display: grid;
     grid-area: terminal;
-}
-div#add-terminal{
-    display: grid;
-    grid-area: add-terminal;
-    grid-template-columns: 70% 30%;
-    grid-template-rows: 100%;
-    grid-template-areas: "add toggle-size";
-    align-items: center;
-    justify-items: auto;
-    font-size: large;
-}
-div#add{
-    display: grid;
-    grid-area: add;
-    border: solid 1px #1afe49;
-    box-shadow: 0 0 0.2rem #1afe49;
-    justify-items: center;
-    cursor: pointer;
-}
-
-div#add:hover{
-    box-shadow: 0 0 0.4rem #1afe49;
 }
 
 div#toggle-size{
@@ -66,5 +43,8 @@ div#toggle-size:hover{
 div#terminal-menu{
     display: grid;
     grid-area: terminal-menu;
-    border: solid 1px #06f7eb
+    justify-items: center;
+    align-items: center;
+    grid-template-rows: repeat(4,25%);
+    border: solid 1px #06f7eb;
 }

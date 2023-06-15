@@ -1,0 +1,25 @@
+form#add-service{
+    position: fixed;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(8, 10%) 15%;
+    justify-self: center;
+    align-self: center;
+    justify-items: center;
+    min-height: 50%;
+    min-width: 50%;
+    z-index: 2;
+    background-image: url("../epic_space_environments_91325575.png");
+    background-position: center;
+    background-size: cover;
+    border: solid 2px #1afe49;
+    border-radius: 3px;
+    animation: add-service-entrance;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes add-service-entrance{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}

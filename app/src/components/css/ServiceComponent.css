@@ -16,6 +16,10 @@ div.service-component:hover{
     box-shadow: 0 0 0.8rem;
 }
 
+span.service-title{
+    color:#1afe49;
+}
+
 a.github-link{
     color: #1afe49;
 }

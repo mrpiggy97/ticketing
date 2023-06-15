@@ -1,5 +1,6 @@
 import { Command, SubCommand, addCommand, Log } from "./Command";
 import { App, setApps, apps } from "../store/app";
+import { v4 as uuid } from "uuid";
 
 function createApp(flags : Map<string,string>, optionalFlags : Map<string,string>) : Log | Error{
     let name : string | undefined = flags.get("--name")
@@ -10,7 +11,7 @@ function createApp(flags : Map<string,string>, optionalFlags : Map<string,string
     let newApp : App = {
         Name: name,
         Description : description,
-        Id: `${name}13123`
+        Id: uuid()
     }
     setApps((prev) => [...prev,newApp])
     return "app created sucessfully"

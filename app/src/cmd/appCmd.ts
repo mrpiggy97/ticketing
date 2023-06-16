@@ -2,7 +2,7 @@ import { Command, SubCommand, addCommand, Log } from "./Command";
 import { App, setApps, apps } from "../store/app";
 import { v4 as uuid } from "uuid";
 
-function createApp(flags : Map<string,string>, optionalFlags : Map<string,string>) : Log | Error{
+function createApp(flags : Map<string,string | undefined>, optionalFlags : Map<string,string>) : Log | Error{
     let name : string | undefined = flags.get("--name")
     let description : string | undefined = flags.get("--description")
     if(name === undefined || description === undefined){
@@ -17,7 +17,7 @@ function createApp(flags : Map<string,string>, optionalFlags : Map<string,string
     return "app created sucessfully"
 }
 
-function removeApp(args : Map<string,string>) : Log | Error{
+function removeApp(args : Map<string,string | undefined>) : Log | Error{
     let appId : string | undefined = args.get("--id")
     if(appId === undefined){
         return new Error("you need to provide --id")
@@ -34,7 +34,6 @@ function removeApp(args : Map<string,string>) : Log | Error{
 let create : SubCommand = new SubCommand("create",["name","description"],[],createApp)
 let remove : SubCommand = new SubCommand("remove",["id"],[],removeApp)
 
-let app : Command = new Command("app")
+export let app : Command = new Command("app")
 app.addSubCommand(create)
 app.addSubCommand(remove)
-addCommand(app)

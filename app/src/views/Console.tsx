@@ -13,13 +13,6 @@ export default function Console() : JSX.Element{
         }
         document.getElementById("terminal-input")?.focus()
     }
-    const toggleTheme = () => {
-        if(theme.mode === "default"){
-            setTheme({mode : "lightmode"})
-        }else{
-            setTheme({mode: "default"})
-        }
-    }
     return(
         <div id="console" class={sizeClass()}>
             <div id="terminal">
@@ -35,7 +28,6 @@ export default function Console() : JSX.Element{
                         <i class="fa-solid fa-chevron-down console" onclick={toggleSizeClass}></i>
                     </Show>
                     <i class="fa-solid fa-trash console"></i>
-                    <i class="fa-solid fa-lightbulb lightmode" onclick={toggleTheme}></i>
                 </div>
             </div>
         </div>

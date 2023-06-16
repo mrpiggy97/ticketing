@@ -1,9 +1,9 @@
-export type ExecutorFunc = (flags : Map<string,string>, optionalFlags : Map<string,string>) => Log | Error
+export type ExecutorFunc = (flags : Map<string,string | undefined>, optionalFlags : Map<string,string>) => Log | Error
 export type Log = string
 
 export class SubCommand{
     Name : string
-    Flags : Map<string,string>
+    Flags : Map<string,string | undefined>
     OptionalFlags : Map<string,string>
     Executor : ExecutorFunc
     constructor(name : string, flags : string[], optFlags : string[] ,callback : ExecutorFunc){
@@ -12,7 +12,7 @@ export class SubCommand{
         this.Flags = new Map<string,string>()
         this.OptionalFlags = new Map<string,string>()
         flags.forEach((val,index) => {
-            this.Flags.set(`--${val}`,"")
+            this.Flags.set(`--${val}`,undefined)
         })
         optFlags.forEach((val,index) => {
             this.OptionalFlags.set(`--${val}`,"")

@@ -13,3 +13,44 @@ input[type="text"]#terminal-input{
 label#input-label{
     color: #1afe49;
 }
+
+div.cmd{
+    display: grid;
+    grid-template-rows: 20% 80%;
+    grid-template-columns: 100%;
+    grid-template-areas: "cmd-line"
+                         "cmd-logs";
+    align-items: center;
+}
+
+div.cmd-line{
+    display: grid;
+    grid-area: cmd-line;
+    grid-template-rows: 100%;
+    grid-template-columns: 10% 90%;
+    align-items: center;
+    justify-items: left;
+}
+
+div.cmd-logs{
+    display: grid;
+    grid-area: cmd-logs;
+    align-items: flex-start;
+    justify-items: left;
+}
+
+span.cyberpunk{
+    color: #1afe49;
+}
+
+span.command-logs{
+    color: #06f7eb;
+}
+
+span.normal-log{
+    color: rgb(247, 2, 145);
+}
+
+span.error-log{
+    color: red;
+}

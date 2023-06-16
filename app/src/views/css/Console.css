@@ -12,6 +12,7 @@ div#console{
     background-color: rgba(4, 4, 43, 1);
     border: solid 2px #06f7eb;
     box-shadow: 0 0 0.4rem #06f7eb;;
+    overflow-y: scroll;
 }
 
 div.console-up{
@@ -38,7 +39,7 @@ div#terminal-menu{
 div#icons{
     display: grid;
     grid-area: icons;
-    grid-template-columns: repeat(5, 20%);
+    grid-template-columns: repeat(4, 25%);
     align-items: center;
     justify-items:right;
     font-size: small;
